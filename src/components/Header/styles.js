@@ -26,3 +26,18 @@ export const Button = styled.button`
   line-height: 36px;
   color: white;
 `
+
+export const CatchButton = styled.button`
+   cursor: pointer;
+  align-items: center;
+  padding: 4px 10px;
+  width: 287px;
+  height: 74px;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  background: ${(props) => props.background};
+  color:  ${(props) => props.color};`
+;

@@ -1,6 +1,5 @@
-import { useContext, useEffect } from "react"
-import usePokemon from "../../Hooks/usePokemon"
-import { CatchButton, Container, DetalsButton, Pokeball, Pokemon, PokemonName, PokemonNumber, PokemonType, TypesContainer } from "./styles"
+import { useContext } from "react"
+import { CatchButton, Container, Pokeball, Pokemon, PokemonName, PokemonNumber, PokemonType, TypesContainer } from "./styles"
 import pokeball from '../../assets/pngwing 2.png'
 import { cardTypes } from "../../Functions/cardTypes"
 import { useNavigate } from "react-router-dom"
@@ -33,7 +32,7 @@ const PokemonCard = ({pokemon}) => {
                 return <PokemonType key={type} src={cardTypes(type)} alt='' />
             })}
         </TypesContainer>
-        <button onClick={() => goToDetailsPage(navigate)}>Detalhes</button>
+        <button onClick={() => goToDetailsPage(navigate, {state: pokemon})}>Detalhes</button>
       </div>
       <div>
         <Pokemon src={pokemon.sprites.default} alt={pokemon.name}/>
