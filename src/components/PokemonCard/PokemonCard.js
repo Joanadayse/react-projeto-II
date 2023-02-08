@@ -1,10 +1,12 @@
 import { useContext } from "react"
 import { CatchButton, Container, Pokeball, Pokemon, PokemonName, PokemonNumber, PokemonType, TypesContainer } from "./styles"
 import pokeball from '../../assets/pngwing 2.png'
-import { cardTypes } from "../../Functions/cardTypes"
+import { cardTypes } from "../../util/ReturnCardType"
 import { useNavigate } from "react-router-dom"
 import { goToDetailsPage } from "../../routes/coordinator"
 import { GlobalContext } from "../../contexts/GlobalContext"
+import { getColors } from "../../util/ReturnCardColor"
+
 
 
 const PokemonCard = ({pokemon}) => {
@@ -23,7 +25,7 @@ const PokemonCard = ({pokemon}) => {
 
  }
   return (
-<Container backColors={"#316520"}>
+<Container backColors={getColors(pokemon.types[0])}>
       <div>
         <PokemonNumber>{pokemon.id}</PokemonNumber>
         <PokemonName>{pokemon.name}</PokemonName>

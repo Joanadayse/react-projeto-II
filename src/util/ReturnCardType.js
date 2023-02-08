@@ -16,45 +16,46 @@ import psychic from "../assets/pokemon-types/psychic.png";
 import rock from "../assets/pokemon-types/rock.png";
 import steel from "../assets/pokemon-types/steel.png";
 import water from "../assets/pokemon-types/water.png";
+import { typeNames } from "./ReturnTypeName";
 
 
 export function cardTypes(type) {
     switch (type) {
-        case "fire":
+        case typeNames.fire:
             return fire;
-        case "grass":
+        case typeNames.grass:
             return grass;
-        case "electric":
+        case typeNames.electric:
             return electric;
-        case "water":
+        case typeNames.water:
             return water
-        case "ground":
+        case typeNames.ground:
             return ground
-        case "rock":
+        case typeNames.rock:
             return rock
-        case "fairy":
+        case typeNames.fairy:
             return fairy
-        case "poison":
+        case typeNames.poison:
             return poison
-        case "bug":
+        case typeNames.bug:
             return bug
-        case "dragon":
+        case typeNames.dragon:
             return dragon
-        case "psychic":
+        case typeNames.psychic:
             return psychic
-        case "flying":
+        case typeNames.flying:
             return flying
-        case "fighting":
+        case typeNames.fighting:
             return fighting
-        case "normal":
+        case typeNames.normal:
             return normal
-        case "dark":
+        case typeNames.dark:
             return dark
-        case "steel":
+        case typeNames.steel:
             return steel
-        case "ice":
+        case typeNames.ice:
             return ice
-        case "ghost":
+        case typeNames.ghost:
             return ghost
         default:
             break;
