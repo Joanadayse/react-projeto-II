@@ -4,12 +4,25 @@ export const Container = styled.div`
   display: flex; align-items: center; 
   justify-content: space-around; 
   padding: 1rem; 
-  background-color: #2ecc71; color: #fff;
+  background-color: white; color: #fff;
+
+  link{
+     font-style: normal;
+   font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: white;
+
+  }
 `
 
 export const Title = styled.span`
 font-size: 3rem; 
 margin-left: 1rem;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+background-color: red;
 `
 
 export const Button = styled.button`
@@ -20,11 +33,7 @@ export const Button = styled.button`
   height: 74px;
   background:  #33A4F5;
   border-radius: 8px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
-  color: white;
+ 
 `
 
 export const CatchButton = styled.button`
@@ -41,3 +50,14 @@ export const CatchButton = styled.button`
   background: ${(props) => props.background};
   color:  ${(props) => props.color};`
 ;
+
+// export const Linkar =styled.link`
+//  font-style: normal;
+//   font-weight: 700;
+//   font-size: 24px;
+//   line-height: 36px;
+//   color: white;
+
+
+
+// `

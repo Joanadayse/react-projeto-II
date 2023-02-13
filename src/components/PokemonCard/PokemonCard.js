@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { CatchButton, Container, Pokeball, Pokemon, PokemonName, PokemonNumber, PokemonType, TypesContainer } from "./styles"
-import pokeball from '../../assets/pngwing 2.png'
+import pokeball from '../../assets/pokebol.png'
 import { cardTypes } from "../../util/ReturnCardType"
 import { useNavigate } from "react-router-dom"
 import { goToDetailsPage } from "../../routes/coordinator"

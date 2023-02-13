@@ -1,14 +1,21 @@
-import { useLocation } from "react-router-dom"
-import Header from "../../components/Header/Header"
+import { useLocation } from "react-router-dom";
+import CardDetalhes from "../../components/CardDetalhes/CardDetalhes";
+import Header from "../../components/Header/Header";
+import { Container, Title } from "./styles";
 
 const PokemonDetailPage = () => {
-  const {state} = useLocation()
-  return (
-    <div>
-      <Header pokemon={state}/>
-      {state.name}
-    </div>
-  )
-}
+  const { state } = useLocation();
 
-export default PokemonDetailPage
+  return (
+    <>
+      <Header pokemon={state} />
+      <Container>
+        <Title>Detalhes</Title>
+
+        <CardDetalhes pokemon={state} />
+      </Container>
+    </>
+  );
+};
+
+export default PokemonDetailPage;

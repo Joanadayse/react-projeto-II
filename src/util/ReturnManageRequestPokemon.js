@@ -24,12 +24,12 @@ export function addValueRequestPokemon(res){
     const pokemon = {
         name: res.data.name,
         id: res.data.id,
-        moves: {
-            ataque1: res.data.moves[0].move.name,
-            ataque2: res.data.moves[1].move.name,
-            ataque3: res.data.moves[2].move.name,
-            ataque4: res.data.moves[3].move.name,
-        },
+        moves: [
+             res.data.moves[0].move.name,
+             res.data.moves[1].move.name,
+             res.data.moves[2].move.name,
+             res.data.moves[3].move.name,
+        ],
         sprites: {
             frontDefault: res.data.sprites.front_default,
             backDefault: res.data.sprites.back_default,
