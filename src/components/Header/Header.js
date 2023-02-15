@@ -16,10 +16,10 @@ function Header({pokemon}) {
 const buttonList=()=>{
   if(inPokedex(pokemon)){
 
-    return <CatchButton background={"#ff6262"} color={"#fff"} onClick={()=>{removeFromPokedex(pokemon)}}>excluir</CatchButton>
+    return <CatchButton background={"#ff6262"} color={"#FFFFFF"} onClick={()=>{removeFromPokedex(pokemon)}}>excluir da pokedex</CatchButton>
 
   }else{
-    return <CatchButton background={"#33A4F5"} color={"#000"} onClick={()=>{addToPokedex(pokemon)}}>adicionar</CatchButton>
+    return <CatchButton background={"#33A4F5"} color={"#FFFFFF"} onClick={()=>{addToPokedex(pokemon)}}>adicionar</CatchButton>
   }
 }
 
@@ -28,7 +28,8 @@ const buttonList=()=>{
   const linkHeader=()=>{
     return(
       <>
-      <Link onClick={(e)=>{e.preventDefault();goToHome(navigate)}} > Todos os Pokemons</Link>
+      {/* <Link onClick={(e)=>{e.preventDefault();goToHome(navigate)}} > Todos os Pokemons</Link> */}
+      <p><b><a href="default.asp" target="_blank" onClick={(e)=>{e.preventDefault();goToHome(navigate)}}>Todos os pokemons</a></b></p>
       </>
     )
 
@@ -51,7 +52,7 @@ const buttonList=()=>{
         return (
           <>
             {imagemHeader()}
-            <Button onClick={() => goToList(navigate)}>Ver pokedex</Button>
+            <Button onClick={() => goToList(navigate)}>pokedex</Button>
           </>
         );
       case "/pokedex":

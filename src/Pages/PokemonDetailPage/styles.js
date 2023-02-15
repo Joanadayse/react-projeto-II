@@ -24,7 +24,7 @@ font-weight: bold;
 height: 72px;
 left: 40px;
 margin-top: 60px;
-font-family: Georgia, 'Times New Roman', Times, serif;
+font-family: 'Poppins', sans-serif;
 font-style: normal;
 font-weight: 700;
 font-size: 48px;

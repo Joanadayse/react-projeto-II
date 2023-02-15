@@ -8,10 +8,27 @@ export const Container = styled.div`
   max-height: 250px;
   background-color: ${((props)=>props.backColors)};
   border-radius: 12px;
-  display: flex;
   position: relative;
   margin: 50px;
   color: #ffffff;
+
+ a{
+  width: 74px;
+height: 24px;
+
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+color:  #FFFFFF;
+/* identical to box height */
+
+text-decoration-line: underline;
+ }
+
+
+
   `
 ;
 
@@ -67,7 +84,10 @@ export const DetalsButton = styled.button`
   top: 138px;
   right: 22px;
   z-index: 2;
-  color: #000;`
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  
+  `
 ;
 
 export const CatchButton = styled.button`
@@ -86,7 +106,8 @@ export const CatchButton = styled.button`
   bottom: 9px;
   right: 22px;
   z-index: 2;
-  color:  ${(props) => props.color};`
+  color:  ${(props) => props.color};
+  font-family: 'Poppins', sans-serif;`
 ;
 
 export const Pokemon = styled.img`

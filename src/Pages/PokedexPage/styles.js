@@ -3,8 +3,9 @@ import styled from "styled-components";
 
 export const CardsContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
-  background-color:  #DDDDDD;`
+  background-color: #5D5D5D;
+  `
 ;
 

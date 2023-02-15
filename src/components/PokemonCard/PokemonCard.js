@@ -2,7 +2,7 @@ import { useContext } from "react"
 import { CatchButton, Container, Pokeball, Pokemon, PokemonName, PokemonNumber, PokemonType, TypesContainer } from "./styles"
 import pokeball from '../../assets/pokebol.png'
 import { cardTypes } from "../../util/ReturnCardType"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { goToDetailsPage } from "../../routes/coordinator"
 import { GlobalContext } from "../../contexts/GlobalContext"
 import { getColors } from "../../util/ReturnCardColor"
@@ -20,7 +20,7 @@ const PokemonCard = ({pokemon}) => {
   return  <CatchButton background={"#ff6262"} color={"#fff"} onClick={()=>{removeFromPokedex(pokemon)}}>excluir</CatchButton>
 
  }else{
-  return  <CatchButton background={"#fff"} color={"#000"}  onClick={()=>{addToPokedex(pokemon)}}>adicionar</CatchButton>
+  return  <CatchButton background={"#fff"} color={"#000"}  onClick={()=>{addToPokedex(pokemon)}}>Capturar!</CatchButton>
  }
 
  }
@@ -34,7 +34,8 @@ const PokemonCard = ({pokemon}) => {
                 return <PokemonType key={type} src={cardTypes(type)} alt='' />
             })}
         </TypesContainer>
-        <button onClick={() => goToDetailsPage(navigate, {state: pokemon})}>Detalhes</button>
+        {/* <Link onClick={() => goToDetailsPage(navigate, {state: pokemon})}>detalhes</Link> */}
+        <a href="default.asp"  onClick={(e) => {e.preventDefault();goToDetailsPage(navigate, {state: pokemon})}}>detalhes</a>
       </div>
       <div>
         <Pokemon src={pokemon.sprites.default} alt={pokemon.name}/>

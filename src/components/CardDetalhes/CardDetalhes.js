@@ -30,7 +30,7 @@ export default function CardDetalhes({ pokemon }) {
       </BackImgContainer>
 
       <StatsContainer>
-        <h3>Stats Base</h3>
+        <h3>Stats Base:</h3>
         <Status stats={stats} />
       </StatsContainer>
 

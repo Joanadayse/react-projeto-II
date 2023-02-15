@@ -14,6 +14,17 @@ export const CardContainer = styled.div`
   gap: 20px;
   z-index: 0;
   width: 80%;
+  font-family: 'Poppins', sans-serif;
+
+  h3{
+  color: black;
+  font-size: 22px;
+  font-weight: 300;
+  font-weight: bold;
+ }
+
+
+
 `;
 
 export const FrontImgContainer = styled.div`
@@ -50,6 +61,7 @@ export const StatsContainer = styled.div`
   background: #ffffff;
   border-radius: 8px;
   padding: 20px;
+  color: #BFD7ED;
 `;
 export const DataContainer = styled.div`
   grid-area: 1/3/2/4;
